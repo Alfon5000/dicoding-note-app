@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  font-size: small;
+}
+
+.note-app {
+  padding: 0 10%;
+}
+
+.note-app__header,
+.note-app__main,
+.note-app__footer {
+  padding: 10px;
+}
+
+.note-app__header,
+.note-app__footer {
+  background-color: black;
+  color: white;
+}
+
+.note-app__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.note-app__header h1 {
+  display: flex;
+  align-content: center;
+}
+
+.note-search {
+  display: flex;
+  align-content: center;
+}
+
+.note-search__input {
+  padding: 5px;
+  width: 240px;
+}
+
+.note-app__main {
+  border: 1px solid black;
+}
+
+.note-add {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+  padding: 10px;
+}
+
+.note-add__title {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.note-add form {
+  margin: auto;
+}
+
+.form-element {
+  margin: 10px 0;
+}
+
+.form-element label {
+  display: block;
+}
+
+.form-element small {
+  display: flex;
+  justify-content: right;
+}
+
+.input-title,
+.input-body,
+.button-add {
+  padding: 5px;
+  width: 450px;
+}
+
+.input-title {
+  height: 60px;
+}
+
+.input-body {
+  height: 120px;
+}
+
+button {
+  border-radius: 5px;
+  border-style: none;
+}
+
+.button-add {
+  background-color: blue;
+  color: white;
+  height: 30px;
+}
+
+.note-list {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: center;
+  margin: 3px;
+  padding: 10px;
+}
+
+.note-list__title-active,
+.note-list__title-archived {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.note-list__empty {
+  color: red;
+}
+
+.note-item {
+  border: 1px solid black;
+  margin: 3px;
+  padding: 5px;
+}
+
+.note-content {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.note-title,
+.note-date,
+.note-body {
+  margin-bottom: 10px;
+}
+
+.note-date {
+  display: block;
+}
+
+.note-action {
+  border: 1px solid black;
+  border-top: 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+}
+
+.button-archive,
+.button-unarchive,
+.button-delete {
+  color: white;
+  margin: 1px;
+  padding: 5px;
+}
+
+.button-archive {
+  background-color: green;
+}
+
+.button-unarchive {
+  background-color: lightseagreen;
+}
+
+.button-delete {
+  background-color: red;
+}
+
+.note-app__footer {
+  text-align: center;
+}
